@@ -4,7 +4,9 @@ export default function Login() {
             <form action="">
 
             </form>
-            <Image/>
+            <div>
+                imagem
+            </div>
         </div>
     )
 }
