@@ -9,10 +9,10 @@ export default function NavBar({active}) {
                 </h1>
             </a>
             <ul className="flex gap-4 items-center justify-end">
-                <li className="hover:bg-neutral-800 p-1 rounded-md transition duration-300"><Link className={active == "/" && 'border-b-2 border-emerald-500'} href="/">Home</Link></li>
-                <li className="hover:bg-neutral-800 p-1 rounded-md transition duration-300"><Link className={active == "tarefas" && 'border-b-2 border-emerald-500'} href="/tarefas">Missions</Link></li>
-                <li className="hover:bg-neutral-800 p-1 rounded-md transition duration-300"><Link className={active == "" && 'border-b-2 border-emerald-500'} href="/poderes">Powers</Link></li>
-                <li className="hover:bg-neutral-800 p-1 rounded-md transition duration-300"><Link className={active == "" && 'border-b-2 border-emerald-500'} href="/perfil">Perfil</Link></li>
+                <li className="hover:bg-neutral-800 hover:-translate-y-1 p-1 rounded-md transition duration-300"><Link className={active == "inicio" && 'border-b-2 border-emerald-500'} href="/paginaInicial">Inicio</Link></li>
+                <li className="hover:bg-neutral-800 hover:-translate-y-1 p-1 rounded-md transition duration-300"><Link className={active == "tarefas" && 'border-b-2 border-emerald-500'} href="/tarefas">Missões</Link></li>
+                <li className="hover:bg-neutral-800 hover:-translate-y-1 p-1 rounded-md transition duration-300"><Link className={active == "poderes" && 'border-b-2 border-emerald-500'} href="/poderes">Powers</Link></li>
+                <li className="hover:bg-neutral-800 hover:-translate-y-1 p-1 rounded-md transition duration-300"><Link className={active == "perfil" && 'border-b-2 border-emerald-500'} href="/perfil">Perfil</Link></li>
             </ul>
         </nav>
     )
